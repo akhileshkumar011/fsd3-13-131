@@ -24,3 +24,23 @@ export const deleteProduct = (pid) => {
     return true ;
 
 };
+
+export const updateProduct = (pid,updateItem) =>{
+    const item = products.findIndex((prd) => prd.id == pid);
+
+    if(item == -1){
+        return false ;
+    }
+    updateItem.id = pid;
+    products[item] = updateItem;
+    return updateItem;
+};
+
+export const getProductById = (pid) => {
+    const index = products.findIndex((prd) => prd.id === pid);
+    if (index == -1){
+        return false;
+    }
+    return products [index];
+};
+

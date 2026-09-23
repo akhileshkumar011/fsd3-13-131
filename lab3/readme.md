@@ -100,3 +100,18 @@ the content type and status code can be send back to client by two ways
 }
 
 ```
+
+
+
+## GET -
+    - if no paramenter pass to the sever and we recive all items
+
+## POST -
+    - add records we pass the value from body section in JSON format of API tester (Echo API)
+    
+
+## DELETE -
+    - To delete any product we pass parameter that is ID of the product from URL
+
+## PUT/PATCH -
+    - To update any product we pass ID from URL and Date update from 
